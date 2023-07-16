@@ -1,0 +1,125 @@
+.container {
+  width: 358px;
+  height: fit-content;
+  background-color: #fff;
+  border: 1px solid #dadce0;
+  border-radius: 6px;
+}
+
+.top {
+  width: 100%;
+  height: fit-content;
+  border-bottom: 1px dashed #dadce0;
+  position: relative;
+  padding-bottom: 12px;
+}
+
+.iconWraper {
+  height: 50px;
+  width: 50px;
+  border-radius: 12px;
+  background-color: #ebe8fd;
+}
+
+.title {
+  flex: 1;
+}
+
+.title h2 {
+  font-size: var(--fontSize3);
+  font-weight: var(--fontWeight2);
+}
+.subTitle {
+  font-size: var(--fontSize2);
+  font-weight: var(--fontWeight1);
+  text-align: left;
+}
+
+.bottom {
+  width: 100%;
+  height: 60%;
+}
+
+.customButton {
+  width: 70px;
+  height: 30px;
+  border: 1px solid #1c4980;
+  border-radius: 40px;
+}
+
+.customButton p {
+  font-size: var(--fontSize2);
+}
+
+.lastEnrollWrapper {
+  width: 60px;
+  position: relative;
+}
+.enrollNumber {
+  font-size: var(--fontSize2);
+}
+.enroll {
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  font-size: var(--fontSize2);
+  font-weight: var(--fontWeight3);
+  border: 2px solid var(--colorWhite);
+}
+.enroll1 {
+  background-color: var(--colorAccentPink);
+  position: absolute;
+  right: 0;
+}
+.enroll2 {
+  background-color: var(--colorAccentRoyalBlue);
+  position: absolute;
+  left: 0;
+  margin-left: 15px;
+}
+.enroll3 {
+  background-color: var(--colorAccentPurple);
+  position: absolute;
+  left: 0;
+}
+
+.assessmentDetailsName {
+  font-size: var(--fontSize1);
+}
+.assessmentDetailsVal {
+  font-size: var(--fontSize2);
+}
+
+@media screen and (min-width: 768px) {
+  .title h2 {
+    font-size: var(--fontSize5);
+  }
+  .subTitle {
+    font-size: var(--fontSize3);
+  }
+
+  .assessmentDetailsName {
+    font-size: var(--fontSize2);
+  }
+  .assessmentDetailsVal {
+    font-size: var(--fontSize3);
+  }
+
+  .customButton p {
+    font-size: var(--fontSize3);
+  }
+
+  .enroll,
+  .enrollNumber {
+    font-size: var(--fontSize3);
+  }
+
+  .title {
+    position: absolute;
+    top: 60px;
+  }
+
+  .top {
+    padding-bottom: 70px;
+  }
+}

@@ -1,0 +1,40 @@
+:root {
+  --colorText100: #1c4980;
+  --colorText50: #8da4bf;
+  --colorWhite: #fff;
+  --colorSuccess: #05c165;
+  --colorAccentPink: #e9407a;
+  ---colorAccentPurpleLight: #ebe8fd;
+  --colorAccentPurple: #6548ee;
+  --colorAccentRoyalBlue: #3079e1;
+  --colorAccentNeonBlue: #6548ee;
+}
+
+.colorText100 {
+  color: var(--colorText100);
+}
+.colorText50 {
+  color: var(--colorText50);
+}
+.colorWhite {
+  color: var(--colorWhite);
+}
+.colorSuccess {
+  color: var(--colroSuccess);
+}
+.colorAccentPink {
+  color: var(--colorAccentPink);
+}
+
+.colorAccentPurpleLight {
+  color: var(--colorAccentPurpleLight);
+}
+.colorAccentPurple {
+  color: var(--colorAccentPurple);
+}
+.colorAccentRoyalBlue {
+  color: var(--colorAccentRoyalBlue);
+}
+.colorAccentNeonBlue {
+  color: var(--colorAccentNeonBlue);
+}

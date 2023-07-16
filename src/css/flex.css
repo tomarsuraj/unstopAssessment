@@ -1,0 +1,26 @@
+.dFlex {
+  display: flex;
+}
+
+.fColumn {
+  flex-direction: column;
+}
+
+.flexJustifyCenter {
+  justify-content: center;
+}
+.flexJustifySpaceBetween {
+  justify-content: space-between;
+}
+.flexJustifySpaceAround {
+  justify-content: space-around;
+}
+.flexAlignCenter {
+  align-items: center;
+}
+.flexAlignSpaceBetween {
+  align-items: space-between;
+}
+.flexAlignSpaceAround {
+  align-items: space-around;
+}

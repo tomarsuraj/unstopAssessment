@@ -1,0 +1,36 @@
+:root {
+  --fontSize1: 10px;
+  --fontSize2: 12px;
+  --fontSize3: 14px;
+  --fontSize4: 16px;
+  --fontSize5: 18px;
+  --fontSize6: 20px;
+  --fontSize7: 22px;
+  --fontWeight1: 500;
+  --fontWeight2: 600;
+  --fontWeight3: 700;
+}
+
+.fontSize4 {
+  font-size: var(--fontSize4);
+}
+.fontSize3 {
+  font-size: var(--fontSize3);
+}
+.fontSize2 {
+  font-size: var(--varSize2);
+}
+.fontSize1 {
+  font-size: var(--fontSize1);
+}
+
+.fontWeight1 {
+  font-weight: var(--fontWeight1);
+}
+.fontWeight2 {
+  font-weight: var(--fontWeight2);
+}
+
+.fontWeight3 {
+  font-weight: var(--fontWeight3);
+}

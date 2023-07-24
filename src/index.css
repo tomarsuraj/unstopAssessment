@@ -5,28 +5,16 @@
 *,
 *::after,
 *::before {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+  border: none;
 }
 
 html {
-  font-size: 62.5%;
-}
-
-body {
   font-family: "Inter", sans-serif !important;
   color: var(--colorText100);
-  font-size: 15px;
-  overflow-wrap: break-word;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 0px;
+  font-size: 62.5%;
 }
 
 a {
@@ -37,4 +25,11 @@ ul {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
 }

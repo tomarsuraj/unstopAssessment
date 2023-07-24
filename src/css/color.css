@@ -3,11 +3,22 @@
   --colorText50: #8da4bf;
   --colorWhite: #fff;
   --colorSuccess: #05c165;
+  --colorSecondary100: #0073e6;
+  --colorSecondary10: #e5f1fc;
+  --colorSecondary5: #f2f8fe;
   --colorAccentPink: #e9407a;
-  ---colorAccentPurpleLight: #ebe8fd;
+  --colorRedLight: #fbebea;
+  --colorRed: #d63500;
+
+  --colorAccentPinkLight: #fce8ef;
+  --colorAccentPurpleLight: #ebe8fd;
   --colorAccentPurple: #6548ee;
   --colorAccentRoyalBlue: #3079e1;
   --colorAccentNeonBlue: #6548ee;
+  --colorAccentBlueLight: #ddedff;
+
+  --colorbackground: #f6f8fa;
+  --colorBorder: #dadce0;
 }
 
 .colorText100 {

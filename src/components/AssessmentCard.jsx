@@ -10,7 +10,7 @@ const AssessmentCard = ({ name, type, date, details, enroll }) => {
             sty.iconWraper + " dFlex flexJustifyCenter flexAlignCenter mr5"
           }
         >
-          <BsBriefcase size={24} className="colorAccentPurple" />
+          <BsBriefcase size={24} />
         </div>
         <div className={sty.title + " colorText100"}>
           <h2>{name}</h2>

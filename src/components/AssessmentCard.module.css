@@ -1,5 +1,6 @@
 .container {
-  width: 358px;
+  width: 90%;
+  min-width: fit-content;
   height: fit-content;
   background-color: #fff;
   border: 1px solid #dadce0;
@@ -37,7 +38,6 @@
 
 .bottom {
   width: 100%;
-  height: 60%;
 }
 
 .customButton {
@@ -90,7 +90,13 @@
   font-size: var(--fontSize2);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 786px) {
+  .container {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media screen and (min-width: 986px) {
   .title h2 {
     font-size: var(--fontSize5);
   }

@@ -1,0 +1,134 @@
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  background-color: var(--colorWhite);
+  padding: 12px 0px 12px 12px;
+}
+
+.topBarTitleWrapper {
+  display: flex;
+  align-items: center;
+}
+.iconWrapper {
+  width: 40px;
+  height: 40px;
+  background-color: var(--colorSecondary5);
+  border-radius: 50%;
+  margin-right: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.iconWrapper svg {
+  height: 70%;
+  width: 70%;
+}
+.topBarTitle {
+  font-size: var(--fontSize4);
+  font-weight: var(--fontWeight2);
+}
+.topBarSubTitleWrapper {
+  display: flex;
+  justify-content: space-around;
+  z-index: 1;
+  background-color: var(--colorWhite);
+}
+.topBarSubTitleWrapper div {
+  width: 100%;
+  padding: 12px 0px;
+  margin: 0px 12px 0px 0px;
+}
+.topBarSubTitleWrapper .active {
+  color: var(--colorSecondary100);
+  border-bottom: 2px solid var(--colorSecondary100);
+}
+.topBarSubTitle {
+  font-size: var(--fontSize3);
+  font-weight: var(--fontWeight1);
+  text-align: center;
+}
+
+.body {
+  height: 90%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  overflow-y: scroll;
+}
+
+.titleBar {
+  width: 90%;
+}
+
+.AssessmentOverviewDisplay {
+  display: contents;
+}
+
+.AssessmentOverviewNone {
+  display: none;
+}
+
+.AssessmentCardWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (max-width: 986px) {
+  .body {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+  .body::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 786px) {
+  .AssessmentCardWrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-flow: row;
+    width: 98%;
+    height: 100%;
+    margin-top: 24px;
+    row-gap: 20px;
+    column-gap: 20px;
+  }
+  .body {
+    align-items: start;
+  }
+}
+@media screen and (min-width: 986px) {
+  .container {
+    width: 90%;
+  }
+  .body {
+    padding: 24px;
+  }
+  .titleBarIconWrapper {
+    display: none !important;
+  }
+
+  .titleBar h2 {
+    font-size: var(--fontSize5);
+    font-weight: var(--fontWeight1);
+  }
+
+  .AssessmentOverviewNone {
+    display: contents;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .AssessmentCardWrapper {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

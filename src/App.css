@@ -1,7 +1,26 @@
 .App {
+  padding: 0px;
+  margin: 0px;
+  background-color: var(--colorbackground);
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  display: flex;
-  padding: 12px;
+  position: relative;
+}
+
+.SideDrawerDisplay {
+  display: contents;
+}
+
+.SideDrawerNone {
+  display: none;
+}
+
+@media screen and (min-width: 986px) {
+  .App {
+    display: flex;
+  }
+  .SideDrawerNone {
+    display: contents;
+  }
 }

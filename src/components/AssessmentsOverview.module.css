@@ -1,0 +1,140 @@
+.container {
+  border-radius: 12px;
+  width: 90%;
+  margin-bottom: 24px;
+}
+
+.title {
+  display: none;
+}
+
+.heading {
+  font-size: var(--fontSize3);
+  font-weight: var(--fontWeight1);
+  margin-right: 24px;
+}
+
+.value {
+  font-size: var(--fontSize4);
+  font-weight: var(--fontWeight2);
+}
+
+.newValue {
+  font-size: var(--fontSize1);
+  font-weight: var(--fontWeight1);
+  color: var(--colorSuccess);
+}
+
+.valueName {
+  font-size: var(--fontSize1);
+  font-weight: var(--fontWeight1);
+}
+
+.iconWrapper {
+  height: 44px;
+  width: 44px;
+  border-radius: 12px;
+}
+
+.iconWrapperPurple {
+  background-color: var(--colorAccentPurpleLight);
+  color: var(--colorAccentPurple);
+}
+.iconWrapperPink {
+  background-color: var(--colorAccentPinkLight);
+  color: var(--colorAccentPink);
+}
+.iconWrapperSecondary {
+  background-color: var(--colorSecondary10);
+  color: var(--colorSecondary100);
+}
+
+.topContainer {
+  border-bottom: 1px solid #dadce0;
+}
+.totalAssessmentContainer {
+  border-right: 1px solid #dadce0;
+}
+.middleContainer {
+  border-bottom: 1px solid #dadce0;
+}
+
+.purposeContainerDesktop {
+  display: none;
+}
+
+@media screen and (min-width: 786px) {
+  .container {
+    width: 98%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 986px) {
+  .title {
+    display: flex;
+    justify-content: start;
+    width: 90%;
+  }
+
+  .heading {
+    font-weight: var(--fontWeight2);
+  }
+
+  .value {
+    font-size: var(--fontSize5);
+    font-weight: var(--fontWeight3);
+  }
+
+  .newValue {
+    font-size: var(--fontSize2);
+  }
+
+  .valueName {
+    font-size: var(--fontSize2);
+  }
+
+  .iconWrapperPurple {
+    background-color: var(--colorAccentPurpleLight);
+    color: var(--colorAccentPurple);
+  }
+  .iconWrapperPink {
+    background-color: var(--colorAccentPinkLight);
+    color: var(--colorAccentPink);
+  }
+  .iconWrapperSecondary {
+    background-color: var(--colorSecondary10);
+    color: var(--colorSecondary100);
+  }
+
+  .purposeContainerDesktop {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: start !important;
+    justify-content: center;
+    border-left: 1px solid #dadce0;
+  }
+  .purposeContainerMobile {
+    display: none;
+  }
+
+  .topContainer {
+    border-right: 1px solid #dadce0;
+    border-bottom: none;
+    padding-right: 24px;
+    padding-left: 12px;
+  }
+  .totalAssessmentContainer {
+    border-right: none;
+  }
+  .middleContainer {
+    border-right: 1px solid #dadce0;
+    border-bottom: none;
+    justify-content: start;
+    flex: 2;
+  }
+  .bottomContainer {
+    flex: 3;
+  }
+}

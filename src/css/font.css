@@ -11,6 +11,10 @@
   --fontWeight3: 700;
 }
 
+.fontSize5 {
+  font-size: var(--fontSize5);
+}
+
 .fontSize4 {
   font-size: var(--fontSize4);
 }

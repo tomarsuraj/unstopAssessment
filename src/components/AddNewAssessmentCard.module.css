@@ -14,7 +14,7 @@
   scrollbar-width: none; /* Firefox */
 }
 
-.example::-webkit-scrollbar {
+.container::-webkit-scrollbar {
   display: none;
 }
 
@@ -47,7 +47,7 @@
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
-.example::-webkit-scrollbar {
+.form::-webkit-scrollbar {
   display: none;
 }
 

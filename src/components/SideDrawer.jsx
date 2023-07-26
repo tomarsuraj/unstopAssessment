@@ -21,7 +21,7 @@ function SideDrawer({ closeSideDrawer }) {
 
       <div className={`  ${sty.menuItem} ${sty.active}`}>
         <PiNotePencilBold size={16} />
-        <p className="fontSize3 fontWeight1 pl3 pt3">Assessment</p>
+        <p className="fontSize3 fontWeight1 pl3">Assessment</p>
       </div>
 
       <div className={sty.menuItem}>

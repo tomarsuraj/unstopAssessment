@@ -31,14 +31,17 @@
   font-size: var(--fontSize4);
   font-weight: var(--fontWeight2);
 }
+
 .topBarSubTitleWrapper {
   display: flex;
   justify-content: space-around;
   z-index: 1;
   background-color: var(--colorWhite);
 }
+
 .topBarSubTitleWrapper div {
   width: 100%;
+  min-width: fit-content;
   padding: 12px 0px;
   margin: 0px 12px 0px 0px;
 }
@@ -98,7 +101,7 @@
     grid-auto-flow: row;
     width: 98%;
     height: 100%;
-    margin-top: 24px;
+    margin-top: 0px;
     row-gap: 20px;
     column-gap: 20px;
   }
@@ -110,16 +113,39 @@
   .container {
     width: 90%;
   }
+  .topBar {
+    border-bottom: 1px solid var(--colorBorder);
+    display: flex;
+    align-items: center;
+  }
+  .iconWrapper {
+    display: none;
+  }
+  .hideOnDesktop {
+    display: none;
+  }
+  .topBarTitleWrapper {
+    border-right: 1px solid var(--colorBorder);
+    margin-bottom: 12px;
+    padding: 6px 12px;
+    height: fit-content;
+  }
+  .topBarSubTitleWrapper {
+    margin-left: 12px;
+  }
+
   .body {
     padding: 24px;
   }
   .titleBarIconWrapper {
+    border-right: 1px solid var(--colorBorder);
     display: none !important;
   }
 
   .titleBar h2 {
     font-size: var(--fontSize5);
     font-weight: var(--fontWeight1);
+    margin-bottom: 0px;
   }
 
   .AssessmentOverviewNone {

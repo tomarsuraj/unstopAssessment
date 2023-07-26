@@ -12,7 +12,9 @@
 
 .menuItem {
   display: flex;
+  height: fit-content;
   justify-content: start;
+  align-items: center;
   width: 100%;
   margin: 16px 0px;
   padding: 12px 10px;
@@ -22,6 +24,7 @@
   background-color: var(--colorSecondary10);
   border: 1px solid var(--colorSecondary100);
   border-radius: 8px;
+  color: var(--colorSecondary100) !important;
 }
 .accDetailContainer {
   border-top: 1px dashed var(--colorBorder);
@@ -46,6 +49,7 @@
   border-radius: 12px;
   border: 1px solid var(--colorRed);
   height: fit-content;
+  width: fit-content;
 }
 
 @media screen and (min-width: 986px) {
@@ -63,14 +67,13 @@
   }
   .menuItem {
     flex-direction: column;
-    align-items: center;
     margin: 16px 0px;
     padding: 12px 4px;
   }
 
   .accDetailContainer {
-    flex-wrap: wrap-reverse;
-    justify-content: center;
+    flex-direction: column-reverse;
+    align-items: center;
   }
 
   .accDetail {

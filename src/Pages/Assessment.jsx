@@ -25,19 +25,22 @@ function Assessment({ openSideDrawer }) {
 
   return (
     <div className={sty.container}>
-      <div className={sty.topBarTitleWrapper}>
-        <div className={sty.iconWrapper} onClick={openSideDrawer}>
-          <BiMenuAltLeft />
+      <div className={sty.topBar}>
+        <div className={sty.topBarTitleWrapper}>
+          <div className={sty.iconWrapper} onClick={openSideDrawer}>
+            <BiMenuAltLeft />
+          </div>
+          <h2 className={sty.topBarTitle}>Assessment</h2>
         </div>
-        <h2 className={sty.topBarTitle}>Assessment</h2>
-      </div>
-      <div className={sty.topBarSubTitleWrapper}>
-        <div className={`${sty.active}`}>
-          <h3 className={`${sty.topBarSubTitle} `}>My Assessments</h3>
-        </div>
-
-        <div>
-          <h3 className={sty.topBarSubTitle}>Unstop Assessments</h3>
+        <div className={sty.topBarSubTitleWrapper}>
+          <div className={`${sty.active}`}>
+            <h3 className={`${sty.topBarSubTitle} `}>My Assessments</h3>
+          </div>
+          <div>
+            <h3 className={`${sty.topBarSubTitle} ${sty.hideOnDesktop}`}>
+              Unstop Assessments
+            </h3>
+          </div>
         </div>
       </div>
 

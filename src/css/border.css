@@ -1,16 +1,36 @@
+/* Styles for the border utility class */
 .borderPrimary {
   border: 1px solid var(--colorBorder);
 }
 
+/*  class for left and right border */
+.borderPrimaryVertical {
+  border-left: 1px solid var(--colorBorder);
+  border-right: 1px solid var(--colorBorder);
+}
+
+/*  class for top and bottom border */
+.borderPrimaryHorizontal {
+  border-top: 1px solid var(--colorBorder);
+  border-bottom: 1px solid var(--colorBorder);
+}
+
+/*  class for right border */
 .borderPrimaryRight {
   border-right: 1px solid var(--colorBorder);
 }
+
+/*  class for left border */
 .borderPrimaryLeft {
   border-left: 1px solid var(--colorBorder);
 }
+
+/*  class for top border */
 .borderPrimaryTop {
   border-top: 1px solid var(--colorBorder);
 }
+
+/*  class for bottom border */
 .borderPrimaryBottom {
   border-bottom: 1px solid var(--colorBorder);
 }

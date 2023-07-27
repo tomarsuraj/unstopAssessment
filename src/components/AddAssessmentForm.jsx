@@ -1,7 +1,11 @@
-import { useState } from "react";
-import sty from "./AddNewAssessmentCard.module.css";
+/* AddAssessmentForm.jsx */
+
+import React from "react";
+import sty from "./AddAssessmentForm.module.css";
 import { RxCross2 } from "react-icons/rx";
-function AddNewAssessmentCard({ closeNewAssessmentForm }) {
+
+function AddAssessmentForm({ closeNewAssessmentForm }) {
+  // Temporary skill list
   const skillListTemp = [
     "UI/UX and Design",
     "Web Development",
@@ -14,8 +18,17 @@ function AddNewAssessmentCard({ closeNewAssessmentForm }) {
     e.preventDefault();
     console.log("handleSubmit");
   }
+
+  // Render each skill item
+  const renderSkill = (name, handleClose) => (
+    <span className={sty.skill}>
+      {name} <RxCross2 onClick={handleClose} />
+    </span>
+  );
+
   return (
-    <div className={` borderPrimary ${sty.container}`}>
+    <div className={`borderPrimary ${sty.container}`}>
+      {/* Header */}
       <div className="dFlex flexJustifySpaceBetween flexAlignCenter borderPrimaryBottom p5">
         <h2 className={sty.title}>Sub-Section Details</h2>
         <div
@@ -25,9 +38,11 @@ function AddNewAssessmentCard({ closeNewAssessmentForm }) {
           <RxCross2 />
         </div>
       </div>
+
+      {/* Assessment Form */}
       <form onSubmit={handleSubmit} className={sty.form}>
-        <label htmlFor="name" className={sty.formLable}>
-          Name of assessmen
+        <label htmlFor="name" className={sty.formLabel}>
+          Name of assessment
         </label>
         <input
           className={sty.formInput}
@@ -35,17 +50,18 @@ function AddNewAssessmentCard({ closeNewAssessmentForm }) {
           name="name"
           placeholder="Type here"
         />
-        <label htmlFor="purpose" className={sty.formLable}>
+
+        <label htmlFor="purpose" className={sty.formLabel}>
           Purpose of the test is
         </label>
-
         <input
           className={sty.formInput}
           type="text"
           name="purpose"
           placeholder="Select"
         />
-        <label htmlFor="description" className={sty.formLable}>
+
+        <label htmlFor="description" className={sty.formLabel}>
           Description
         </label>
         <input
@@ -55,11 +71,11 @@ function AddNewAssessmentCard({ closeNewAssessmentForm }) {
           placeholder="Select"
         />
 
-        <label htmlFor="skills" className={sty.formLable}>
+        <label htmlFor="skills" className={sty.formLabel}>
           Skills
         </label>
         <div className={sty.skillWrapper}>
-          {skillListTemp.map((val) => skill(val))}
+          {skillListTemp.map((val) => renderSkill(val))}
           <input
             className={sty.formInput}
             type="text"
@@ -67,7 +83,8 @@ function AddNewAssessmentCard({ closeNewAssessmentForm }) {
             placeholder="Type here"
           />
         </div>
-        <label htmlFor="duration" className={sty.formLable}>
+
+        <label htmlFor="duration" className={sty.formLabel}>
           Duration of Assessment
         </label>
         <input
@@ -77,8 +94,10 @@ function AddNewAssessmentCard({ closeNewAssessmentForm }) {
           placeholder="HH:MM:SS"
         />
       </form>
-      <div className={sty.buttonWraper}>
-        <button type="submit" className={sty.formButtom}>
+
+      {/* Next Button */}
+      <div className={sty.buttonWrapper}>
+        <button type="submit" className={sty.formButton}>
           Next
         </button>
       </div>
@@ -86,10 +105,4 @@ function AddNewAssessmentCard({ closeNewAssessmentForm }) {
   );
 }
 
-export default AddNewAssessmentCard;
-
-const skill = (name, handleClose) => (
-  <span className={sty.skill}>
-    {name} <RxCross2 onClick={handleClose} />
-  </span>
-);
+export default AddAssessmentForm;

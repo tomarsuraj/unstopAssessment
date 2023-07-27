@@ -1,38 +1,46 @@
+/* Global CSS Variables */
 :root {
-  --colorText100: #1c4980;
-  --colorText50: #8da4bf;
-  --colorWhite: #fff;
-  --colorSuccess: #05c165;
-  --colorSecondary100: #0073e6;
-  --colorSecondary10: #e5f1fc;
-  --colorSecondary5: #f2f8fe;
-  --colorAccentPink: #e9407a;
-  --colorRedLight: #fbebea;
-  --colorRed: #d63500;
+  /* Text Colors */
+  --colorText100: #1c4980; /* Dark blue text color */
+  --colorText50: #8da4bf; /* Light blue text color */
+  --colorWhite: #fff; /* White text color */
+  --colorSuccess: #05c165; /* Success color */
 
-  --colorAccentPinkLight: #fce8ef;
-  --colorAccentPurpleLight: #ebe8fd;
-  --colorAccentPurple: #6548ee;
-  --colorAccentRoyalBlue: #3079e1;
-  --colorAccentNeonBlue: #6548ee;
-  --colorAccentBlueLight: #ddedff;
+  /* Secondary Colors */
+  --colorSecondary100: #0073e6; /* Primary blue color */
+  --colorSecondary10: #e5f1fc; /* Light blue background color */
+  --colorSecondary5: #f2f8fe; /* Very light blue background color */
 
-  --colorbackground: #f6f8fa;
-  --colorBorder: #dadce0;
+  /* Accent Colors */
+  --colorAccentPink: #e9407a; /* Pink accent color */
+  --colorRedLight: #fbebea; /* Light red background color */
+  --colorRed: #d63500; /* Red color */
+
+  --colorAccentPinkLight: #fce8ef; /* Light pink background color */
+  --colorAccentPurpleLight: #ebe8fd; /* Light purple background color */
+  --colorAccentPurple: #6548ee; /* Purple accent color */
+  --colorAccentRoyalBlue: #3079e1; /* Royal blue accent color */
+  --colorAccentNeonBlue: #6548ee; /* Neon blue accent color */
+  --colorAccentBlueLight: #ddedff; /* Light blue background color */
+
+  /* Background and Border Colors */
+  --colorbackground: #f6f8fa; /* Light gray background color */
+  --colorBorder: #dadce0; /* Light gray border color */
 }
 
+/* Color Utility Classes */
 .colorText100 {
   color: var(--colorText100);
 }
+
 .colorText50 {
   color: var(--colorText50);
 }
+
 .colorWhite {
   color: var(--colorWhite);
 }
-.colorSuccess {
-  color: var(--colroSuccess);
-}
+
 .colorAccentPink {
   color: var(--colorAccentPink);
 }
@@ -40,12 +48,15 @@
 .colorAccentPurpleLight {
   color: var(--colorAccentPurpleLight);
 }
+
 .colorAccentPurple {
   color: var(--colorAccentPurple);
 }
+
 .colorAccentRoyalBlue {
   color: var(--colorAccentRoyalBlue);
 }
+
 .colorAccentNeonBlue {
   color: var(--colorAccentNeonBlue);
 }

@@ -1,3 +1,4 @@
+/* Styles for the container */
 .container {
   position: absolute;
   top: 0px;
@@ -10,6 +11,7 @@
   padding: 36px 12px 12px 18px;
 }
 
+/* Styles for menu items */
 .menuItem {
   display: flex;
   height: fit-content;
@@ -20,12 +22,15 @@
   padding: 12px 10px;
 }
 
+/* Styles for the active menu item */
 .active {
   background-color: var(--colorSecondary10);
   border: 1px solid var(--colorSecondary100);
   border-radius: 8px;
   color: var(--colorSecondary100) !important;
 }
+
+/* Styles for the account details container */
 .accDetailContainer {
   border-top: 1px dashed var(--colorBorder);
   display: flex;
@@ -34,12 +39,15 @@
   height: fit-content;
   padding-top: 24px;
 }
+
+/* Styles for the account details */
 .accDetail {
   display: flex;
   flex: 1;
   align-items: center;
 }
 
+/* Styles for the admin wrapper */
 .adminWrapper {
   font-size: var(--fontSize1);
   font-weight: var(--fontWeight1);
@@ -52,7 +60,9 @@
   width: fit-content;
 }
 
+/* Media query for screens with a width of 986px and larger */
 @media screen and (min-width: 986px) {
+  /* Adjust container styles for larger screens */
   .container {
     flex: 1;
     position: relative;
@@ -62,20 +72,26 @@
     background-color: var(--colorWhite);
     margin-right: 16px;
   }
+
+  /* Hide heading for larger screens */
   .heading {
     display: none !important;
   }
+
+  /* Adjust menu item styles for larger screens */
   .menuItem {
     flex-direction: column;
     margin: 16px 0px;
     padding: 12px 4px;
   }
 
+  /* Adjust account details container styles for larger screens */
   .accDetailContainer {
     flex-direction: column-reverse;
     align-items: center;
   }
 
+  /* Adjust account details styles for larger screens */
   .accDetail {
     flex-direction: column;
     justify-content: center;

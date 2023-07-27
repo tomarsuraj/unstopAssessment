@@ -1,35 +1,52 @@
+/* Import the Inter font from Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
+/* Import index.css from the ./css directory */
 @import url("./css/index.css");
 
+/* Global CSS Reset */
 *,
 *::after,
 *::before {
+  /* Reset margin and padding to zero */
   margin: 0;
   padding: 0;
+  /* Include borders in box sizing calculation */
   box-sizing: border-box;
+  /* Remove default border styles */
   border: none;
 }
 
+/* Styles for the <html> element */
 html {
+  /* Set the font family to "Inter", sans-serif, with important priority */
   font-family: "Inter", sans-serif !important;
+  /* Set the text color using custom variable */
   color: var(--colorText100);
+  /* Set the base font size to 62.5% (10px for 16px default font size) */
   font-size: 62.5%;
 }
 
+/* Styles for anchor (<a>) elements */
 a {
+  /* Remove underline from anchor text */
   text-decoration: none;
 }
 
+/* Styles for unordered lists (<ul>) */
 ul {
+  /* Remove default list styles */
   list-style: none;
+  /* Reset padding and margin to zero */
   padding: 0;
   margin: 0;
 }
 
+/* Styles for form elements when focused */
 input:focus,
 select:focus,
 textarea:focus,
 button:focus {
+  /* Remove the default focus outline */
   outline: none;
 }

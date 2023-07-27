@@ -1,63 +1,78 @@
+/* Card container styles */
 .container {
   width: 90%;
   min-width: fit-content;
   height: fit-content;
-  background-color: #fff;
-  border: 1px solid #dadce0;
+  background-color: var(--colorWhite);
+  border: 1px solid var(--colorBorder);
   border-radius: 6px;
 }
 
+/* Top section styles */
 .top {
   width: 100%;
   height: fit-content;
-  border-bottom: 1px dashed #dadce0;
+  border-bottom: 1px dashed var(--colorBorder);
   position: relative;
   padding-bottom: 12px;
 }
 
-.iconWraper {
+/* Icon wrapper styles */
+.iconWrapper {
   height: 50px;
   width: 50px;
   border-radius: 12px;
-  background-color: #ebe8fd;
+  background-color: var(--colorAccentPurpleLight);
 }
 
+/* Title section styles */
 .title {
   flex: 1;
 }
 
+/* Main title styles */
 .title h2 {
   font-size: var(--fontSize3);
   font-weight: var(--fontWeight2);
 }
+
+/* Subtitle styles */
 .subTitle {
   font-size: var(--fontSize2);
   font-weight: var(--fontWeight1);
   text-align: left;
 }
 
+/* Bottom section styles */
 .bottom {
   width: 100%;
 }
 
+/* Custom button styles */
 .customButton {
   width: 70px;
   height: 30px;
-  border: 1px solid #1c4980;
+  border: 1px solid var(--colorSecondary100);
   border-radius: 40px;
 }
 
+/* Button text styles */
 .customButton p {
   font-size: var(--fontSize2);
 }
 
+/* Last enroll wrapper styles */
 .lastEnrollWrapper {
   width: 60px;
   position: relative;
 }
+
+/* Enroll number styles */
 .enrollNumber {
   font-size: var(--fontSize2);
 }
+
+/* Enroll styles */
 .enroll {
   width: 30px;
   height: 30px;
@@ -66,36 +81,48 @@
   font-weight: var(--fontWeight3);
   border: 2px solid var(--colorWhite);
 }
+
+/* Enroll position styles */
 .enroll1 {
   background-color: var(--colorAccentPink);
   position: absolute;
   right: 0;
+  z-index: 3;
 }
+
 .enroll2 {
   background-color: var(--colorAccentRoyalBlue);
   position: absolute;
   left: 0;
   margin-left: 15px;
+  z-index: 2;
 }
+
 .enroll3 {
   background-color: var(--colorAccentPurple);
   position: absolute;
   left: 0;
+  z-index: 1;
 }
 
+/* Assessment details styles */
 .assessmentDetailsName {
   font-size: var(--fontSize1);
 }
+
+/* Assessment details value styles */
 .assessmentDetailsVal {
   font-size: var(--fontSize2);
 }
 
+/* Media queries for responsiveness */
 @media screen and (min-width: 786px) {
   .container {
     width: 100%;
     height: 100%;
   }
 }
+
 @media screen and (min-width: 986px) {
   .title h2 {
     font-size: var(--fontSize5);

@@ -1,26 +1,39 @@
+/* App Styles */
 .App {
+  /* Reset default padding and margin */
   padding: 0px;
   margin: 0px;
+  /* Set background color using custom variable */
   background-color: var(--colorbackground);
+  /* Set width and height to cover the entire viewport */
   width: 100vw;
   height: 100vh;
+  /* Hide overflowing content */
   overflow: hidden;
+  /* Set position relative to the viewport */
   position: relative;
 }
 
+/* Side Drawer Display */
 .SideDrawerDisplay {
+  /* Show the side drawer */
   display: contents;
 }
 
+/* Side Drawer None */
 .SideDrawerNone {
+  /* Hide the side drawer */
   display: none;
 }
 
+/* Media Query: Screen width greater than or equal to 986px */
 @media screen and (min-width: 986px) {
   .App {
+    /* Display the App as a flex container for larger screens */
     display: flex;
   }
   .SideDrawerNone {
+    /* Show the side drawer for larger screens */
     display: contents;
   }
 }

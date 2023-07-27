@@ -1,82 +1,111 @@
+/* Styles for the main container */
 .container {
   border-radius: 12px;
   width: 90%;
   margin-bottom: 24px;
 }
 
+/* Hide the title section */
 .title {
   display: none;
 }
 
+/* Styles for the heading section */
 .heading {
   font-size: var(--fontSize3);
   font-weight: var(--fontWeight1);
   margin-right: 24px;
 }
 
+/* Styles for the value section */
 .value {
   font-size: var(--fontSize4);
   font-weight: var(--fontWeight2);
 }
 
+/* Styles for the new value section */
 .newValue {
   font-size: var(--fontSize1);
   font-weight: var(--fontWeight1);
   color: var(--colorSuccess);
 }
 
+/* Styles for the value name section */
 .valueName {
   font-size: var(--fontSize1);
   font-weight: var(--fontWeight1);
 }
 
+/* Styles for the icon wrapper */
 .iconWrapper {
   height: 44px;
   width: 44px;
   border-radius: 12px;
 }
 
+/* Styles for the purple icon wrapper */
 .iconWrapperPurple {
   background-color: var(--colorAccentPurpleLight);
   color: var(--colorAccentPurple);
 }
+
+/* Styles for the pink icon wrapper */
 .iconWrapperPink {
   background-color: var(--colorAccentPinkLight);
   color: var(--colorAccentPink);
 }
+
+/* Styles for the secondary icon wrapper */
 .iconWrapperSecondary {
   background-color: var(--colorSecondary10);
   color: var(--colorSecondary100);
 }
 
+/* Styles for the top container */
 .topContainer {
   border-bottom: 1px solid #dadce0;
 }
+
+/* Styles for the total assessment container */
 .totalAssessmentContainer {
   border-right: 1px solid #dadce0;
 }
+
+/* Styles for the middle container */
 .middleContainer {
   border-bottom: 1px solid #dadce0;
 }
 
+/* Styles for the desktop purpose container */
 .purposeContainerDesktop {
   display: none;
 }
 
+/* Media query for screens with a width of 786px and larger */
 @media screen and (min-width: 786px) {
+  /* Adjust container width and flex layout for larger screens */
   .container {
     width: 98%;
     display: flex;
     justify-content: space-between;
   }
-}
-@media screen and (min-width: 986px) {
-  .title {
+
+  /* Display purpose container for larger screens */
+  .purposeContainerDesktop {
     display: flex;
-    justify-content: start;
-    width: 90%;
+    flex-direction: column;
+    flex: 1;
+    align-items: start !important;
+    justify-content: center;
+    border-left: 1px solid #dadce0;
   }
 
+  /* Hide purpose container for larger screens */
+  .purposeContainerMobile {
+    display: none;
+  }
+
+  /* Styles for heading, value, newValue, and valueName for larger screens */
   .heading {
     font-weight: var(--fontWeight2);
   }
@@ -93,47 +122,50 @@
   .valueName {
     font-size: var(--fontSize2);
   }
+}
 
+/* Media query for screens with a width of 986px and larger */
+@media screen and (min-width: 986px) {
+  /* Adjust title width for larger screens */
+  .title {
+    width: 90%;
+  }
+
+  /* Styles for iconWrapperPurple, iconWrapperPink, and iconWrapperSecondary for larger screens */
   .iconWrapperPurple {
     background-color: var(--colorAccentPurpleLight);
     color: var(--colorAccentPurple);
   }
+
   .iconWrapperPink {
     background-color: var(--colorAccentPinkLight);
     color: var(--colorAccentPink);
   }
+
   .iconWrapperSecondary {
     background-color: var(--colorSecondary10);
     color: var(--colorSecondary100);
   }
 
-  .purposeContainerDesktop {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    align-items: start !important;
-    justify-content: center;
-    border-left: 1px solid #dadce0;
-  }
-  .purposeContainerMobile {
-    display: none;
-  }
-
+  /* Styles for topContainer, totalAssessmentContainer, middleContainer, and bottomContainer for larger screens */
   .topContainer {
     border-right: 1px solid #dadce0;
     border-bottom: none;
     padding-right: 24px;
     padding-left: 12px;
   }
+
   .totalAssessmentContainer {
     border-right: none;
   }
+
   .middleContainer {
     border-right: 1px solid #dadce0;
     border-bottom: none;
     justify-content: start;
     flex: 2;
   }
+
   .bottomContainer {
     flex: 3;
   }

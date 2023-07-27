@@ -1,21 +1,29 @@
-import sty from "./Assessment.module.css";
-import { useState } from "react";
+// Import React and necessary hooks
+import React, { useState } from "react";
 
+// Import react icon
 import OutsideClickHandler from "react-outside-click-handler";
-import { AssessmentCardList } from "../data/Assessment";
 import { BiMenuAltLeft, BiSolidBarChartAlt2 } from "react-icons/bi";
 import { MdSearch, MdFilterAlt } from "react-icons/md";
 
-import AddNewAssessmentCard from "../components/AddNewAssessmentCard";
-import AssessmentCard from "../components/AssessmentCard";
-import AssessmentOverview from "../components/AssessmentsOverview";
-import NewAssessmentCard from "../components/NewAssessmentCard";
+// Import CSS styles
+import sty from "./Assessment.module.css";
 
+// Import data and components
+import { AssessmentCardList } from "../data/Assessment";
+import AssessmentOverview from "../components/AssessmentsOverview";
+import NewAssessmentCardClickable from "../components/NewAssessmentCardClickable";
+import AddAssessmentForm from "../components/AddAssessmentForm";
+import AssessmentCard from "../components/AssessmentCard";
+
+// Main Assessment component
 function Assessment({ openSideDrawer }) {
+  // State variables to manage UI states
   const [isAssessmentOverViewClick, setIsAssessmentOverViewClick] =
     useState(false);
-
   const [isNewAssessmentClikc, setIsNewAssessmentClikc] = useState(false);
+
+  // Handlers for opening and closing the new assessment form
   const openNewAssessmentForm = () => {
     setIsNewAssessmentClikc(true);
   };
@@ -25,6 +33,7 @@ function Assessment({ openSideDrawer }) {
 
   return (
     <div className={sty.container}>
+      {/* Top Bar */}
       <div className={sty.topBar}>
         <div className={sty.topBarTitleWrapper}>
           <div className={sty.iconWrapper} onClick={openSideDrawer}>
@@ -44,7 +53,9 @@ function Assessment({ openSideDrawer }) {
         </div>
       </div>
 
+      {/* Body */}
       <div className={sty.body}>
+        {/* Assessment Overview */}
         <div
           className={
             isAssessmentOverViewClick
@@ -55,6 +66,7 @@ function Assessment({ openSideDrawer }) {
           <AssessmentOverview />
         </div>
 
+        {/* Title Bar */}
         <div
           className={`dFlex flexJustifySpaceBetween mb5 mt5 ${sty.titleBar}`}
         >
@@ -72,8 +84,12 @@ function Assessment({ openSideDrawer }) {
             />
           </div>
         </div>
+
+        {/* Assessment Cards */}
         <div className={sty.AssessmentCardWrapper}>
-          <NewAssessmentCard openNewAssessmentForm={openNewAssessmentForm} />
+          <NewAssessmentCardClickable
+            openNewAssessmentForm={openNewAssessmentForm}
+          />
           {AssessmentCardList.map((val, index) => (
             <AssessmentCard
               name={val.name}
@@ -87,14 +103,14 @@ function Assessment({ openSideDrawer }) {
         </div>
       </div>
 
+      {/* New Assessment Form */}
       <OutsideClickHandler onOutsideClick={closeNewAssessmentForm}>
         {isNewAssessmentClikc ? (
-          <AddNewAssessmentCard
-            closeNewAssessmentForm={closeNewAssessmentForm}
-          />
+          <AddAssessmentForm closeNewAssessmentForm={closeNewAssessmentForm} />
         ) : null}
       </OutsideClickHandler>
     </div>
   );
 }
+
 export default Assessment;

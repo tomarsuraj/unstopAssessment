@@ -10,31 +10,32 @@
   --fontWeight2: 600;
   --fontWeight3: 700;
 }
-
+/* Used classes */
 .fontSize5 {
   font-size: var(--fontSize5);
 }
 
-.fontSize4 {
-  font-size: var(--fontSize4);
-}
+/* Used classes */
 .fontSize3 {
   font-size: var(--fontSize3);
 }
+
+/* Used classes */
 .fontSize2 {
-  font-size: var(--varSize2);
+  font-size: var(--fontSize2);
 }
+
+/* Used classes */
 .fontSize1 {
   font-size: var(--fontSize1);
 }
 
+/* Used classes */
 .fontWeight1 {
   font-weight: var(--fontWeight1);
 }
+
+/* Used classes */
 .fontWeight2 {
   font-weight: var(--fontWeight2);
-}
-
-.fontWeight3 {
-  font-weight: var(--fontWeight3);
 }

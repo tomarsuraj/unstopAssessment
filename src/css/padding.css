@@ -1,75 +1,106 @@
+/* Padding utility classes */
+
+/* Padding classes with different sizes */
 .p1 {
   padding: 2px;
 }
+
 .p2 {
   padding: 4px;
 }
+
 .p3 {
   padding: 6px;
 }
+
 .p4 {
   padding: 8px;
 }
+
 .p5 {
   padding: 12px;
 }
+
+/* Padding classes with left padding */
 .p1 {
   padding-left: 2px;
 }
+
 .pl2 {
   padding-left: 4px;
 }
+
 .pl3 {
   padding-left: 6px;
 }
+
 .pl4 {
   padding-left: 8px;
 }
+
 .pl5 {
   padding-left: 12px;
 }
+
+/* Padding classes with right padding */
 .pr1 {
   padding-right: 2px;
 }
+
 .pr2 {
   padding-right: 4px;
 }
+
 .pr3 {
   padding-right: 6px;
 }
+
 p.pr4 {
   padding-right: 8px;
 }
+
 .pr5 {
   padding-right: 12px;
 }
+
+/* Padding classes with top padding */
 .pt1 {
   padding-top: 2px;
 }
+
 .pt2 {
   padding-top: 4px;
 }
+
 .pt3 {
   padding-top: 6px;
 }
+
 .pt4 {
   padding-top: 8px;
 }
+
 .pt5 {
   padding-top: 12px;
 }
+
+/* Padding classes with bottom padding */
 .pb1 {
   padding-bottom: 2px;
 }
+
 .pb2 {
   padding-bottom: 4px;
 }
+
 .pb3 {
   padding-bottom: 6px;
 }
+
 .pb4 {
   padding-bottom: 8px;
 }
+
 .pb5 {
   padding-bottom: 12px;
 }

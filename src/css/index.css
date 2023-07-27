@@ -1,6 +1,19 @@
+/* Importing CSS utility files */
+
+/* Import color utility */
 @import url("./color.css");
+
+/* Import flex utility */
 @import url("./flex.css");
+
+/* Import font utility */
 @import url("./font.css");
+
+/* Import margin utility */
 @import url("./margin.css");
+
+/* Import padding utility */
 @import url("./padding.css");
+
+/* Import border utility */
 @import url("./border.css");

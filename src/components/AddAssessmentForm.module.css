@@ -1,28 +1,49 @@
+/* AddNewAssessmentCard.module.css */
+
+/* Shared Styles */
+.shared {
+  /* Typography */
+  font-size: var(--fontSize2);
+  font-weight: var(--fontWeight1);
+}
+
+/* Styles for the Container */
 .container {
+  /* Positioning */
   position: absolute;
   bottom: 0;
   z-index: 4;
+
+  /* Dimensions and Appearance */
   height: fit-content;
   width: 100%;
-  left: 0px;
+  left: 0;
   max-height: 96vh;
   background-color: var(--colorWhite);
-  border-radius: 12px 12px 0px 0px;
-  box-shadow: 0px -1px 56px rgba(50, 50, 50, 0.266);
+  border-radius: 12px 12px 0 0;
+  box-shadow: 0 -1px 56px rgba(50, 50, 50, 0.266);
+
+  /* Scrolling */
   overflow-y: scroll;
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
 
+/* Hide scrollbar in Chrome, Safari, and Opera */
 .container::-webkit-scrollbar {
   display: none;
 }
 
+/* Styles for the Title */
 .title {
+  /* Typography */
   font-size: var(--fontSize3);
-  font-weight: var(--fontwight2);
+  font-weight: var(--fontWeight2);
 }
+
+/* Styles for the Close Button */
 .closeButtonWrapper {
+  /* Dimensions and Appearance */
   background-color: var(--colorRedLight);
   display: flex;
   justify-content: center;
@@ -32,124 +53,162 @@
   height: 40px;
   border-radius: 30px;
 }
+
 .closeButtonWrapper svg {
+  /* SVG Icon Styles */
   height: 60%;
   width: 60%;
 }
 
+/* Styles for the Form */
 .form {
+  /* Dimensions and Appearance */
   height: fit-content;
   max-height: 72vh;
   display: flex;
   flex-direction: column;
   padding: 12px;
+
+  /* Scrolling */
   overflow-y: scroll;
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
+
+/* Hide scrollbar in Chrome, Safari, and Opera */
 .form::-webkit-scrollbar {
   display: none;
 }
 
-.formLable {
-  font-size: var(--fontSize2);
-  font-weight: var(--fontwight1);
+/* Styles for the Form Label */
+.formLabel {
+  /* Shared Styles */
+  composes: shared;
   color: var(--colorText100);
 }
+
+/* Styles for the Form Input */
 .formInput {
+  /* Shared Styles */
+  composes: shared;
+  /* Dimensions and Appearance */
   width: 100%;
   margin-top: 6px;
   margin-bottom: 24px;
   padding: 12px;
   border: 1px solid #dadce0;
   border-radius: 6px;
-  font-size: var(--fontSize2);
-  font-weight: var(--fontwight1);
+
+  /* Typography */
   color: var(--colorText100);
 }
 
 .formInput::placeholder {
   color: var(--colorText50);
 }
+
 .formInput::-webkit-input-placeholder {
   color: var(--colorText50);
 }
 
+/* Styles for the Skill Wrapper */
 .skillWrapper {
+  /* Dimensions and Appearance */
   display: flex;
   flex-wrap: wrap;
   justify-content: start;
   border: 1px solid #dadce0;
   align-items: start;
   width: 100%;
-  padding: 0px;
+  padding: 0;
   border-radius: 6px;
   margin-top: 6px;
   margin-bottom: 24px;
 }
 
 .skillWrapper input {
-  margin: 12px 0px 0px 0px;
+  /* Dimensions and Appearance */
+  margin: 12px 0 0 0;
   border: none;
   border-top: 1px solid #dadce0;
-  border-radius: 0px;
+  border-radius: 0;
 }
+
+/* Styles for the Skill */
 .skill {
+  /* Dimensions and Appearance */
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: var(--colorAccentBlueLight);
-  font-size: var(--fontSize2);
-  font-weight: var(--fontwight1);
+  /* Shared Styles */
+  composes: shared;
   padding: 6px 12px;
-  margin: 12px 6px 0px 12px;
+  margin: 12px 6px 0 12px;
   border-radius: 30px;
 }
+
 .skill svg {
+  /* SVG Icon Styles */
   height: 16px;
   width: 16px;
   margin-left: 12px;
 }
-.buttonWraper {
+
+/* Styles for the Button Wrapper */
+.buttonWrapper {
+  /* Dimensions and Appearance */
   width: 100%;
   height: fit-content;
   border-top: 1px solid #dadce0;
   padding: 12px;
 }
 
-.formButtom {
+/* Styles for the Form Button */
+.formButton {
+  /* Dimensions and Appearance */
   background-color: var(--colorSecondary100);
   color: var(--colorWhite);
-  font-size: var(--fontSize3);
-  font-weight: var(--fontwight2);
-  padding: 12px 12px;
+  /* Shared Styles */
+  composes: shared;
+  padding: 12px;
   border-radius: 6px;
   width: 100%;
 }
 
+/* Media Queries */
 @media screen and (min-width: 768px) {
   .container {
+    /* Container Styles - Media Query */
     width: 80%;
     left: 10%;
   }
 
   .title {
+    /* Title Styles - Media Query */
     font-size: var(--fontSize4);
   }
 }
+
 @media screen and (min-width: 986px) {
   .container {
+    /* Container Styles - Media Query */
     width: 60%;
     left: 20%;
   }
+
   .title {
+    /* Title Styles - Media Query */
     font-size: var(--fontSize6);
   }
 
-  .formLable {
+  .formLabel {
+    /* Form Label Styles - Media Query */
     font-size: var(--fontSize4);
   }
+
   .formInput {
+    /* Form Input Styles - Media Query */
     font-size: var(--fontSize3);
   }
 }

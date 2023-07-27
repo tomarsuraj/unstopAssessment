@@ -1,3 +1,4 @@
+/* Container Styles */
 .container {
   width: 100%;
   height: 100%;
@@ -9,10 +10,13 @@
   padding: 12px 0px 12px 12px;
 }
 
+/* Top Bar Title Wrapper Styles */
 .topBarTitleWrapper {
   display: flex;
   align-items: center;
 }
+
+/* Icon Wrapper Styles */
 .iconWrapper {
   width: 40px;
   height: 40px;
@@ -23,15 +27,20 @@
   justify-content: center;
   align-items: center;
 }
+
+/* Icon SVG Styles */
 .iconWrapper svg {
   height: 70%;
   width: 70%;
 }
+
+/* Top Bar Title Styles */
 .topBarTitle {
   font-size: var(--fontSize4);
   font-weight: var(--fontWeight2);
 }
 
+/* Top Bar Subtitle Wrapper Styles */
 .topBarSubTitleWrapper {
   display: flex;
   justify-content: space-around;
@@ -39,22 +48,28 @@
   background-color: var(--colorWhite);
 }
 
+/* Top Bar Subtitle Wrapper Div Styles */
 .topBarSubTitleWrapper div {
   width: 100%;
   min-width: fit-content;
   padding: 12px 0px;
   margin: 0px 12px 0px 0px;
 }
+
+/* Active Top Bar Subtitle Styles */
 .topBarSubTitleWrapper .active {
   color: var(--colorSecondary100);
   border-bottom: 2px solid var(--colorSecondary100);
 }
+
+/* Top Bar Subtitle Styles */
 .topBarSubTitle {
   font-size: var(--fontSize3);
   font-weight: var(--fontWeight1);
   text-align: center;
 }
 
+/* Body Styles */
 .body {
   height: 90%;
   width: 100%;
@@ -65,18 +80,22 @@
   overflow-y: scroll;
 }
 
+/* Title Bar Styles */
 .titleBar {
   width: 90%;
 }
 
+/* Assessment Overview Display Styles */
 .AssessmentOverviewDisplay {
   display: contents;
 }
 
+/* Assessment Overview None Styles */
 .AssessmentOverviewNone {
   display: none;
 }
 
+/* Assessment Card Wrapper Styles */
 .AssessmentCardWrapper {
   width: 100%;
   display: flex;
@@ -84,17 +103,23 @@
   align-items: center;
 }
 
+/* Media Query: Screen width less than 986px */
 @media screen and (max-width: 986px) {
+  /* Hide the default scrollbar for IE and Edge */
   .body {
-    -ms-overflow-style: none; /* IE and Edge */
-    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;
+    /* Hide the scrollbar for Firefox */
+    scrollbar-width: none;
   }
+  /* Hide the scrollbar for Chrome, Safari, and Opera */
   .body::-webkit-scrollbar {
     display: none;
   }
 }
 
+/* Media Query: Screen width greater than or equal to 786px */
 @media screen and (min-width: 786px) {
+  /* Display the assessment cards in a grid layout with 2 columns */
   .AssessmentCardWrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -106,9 +131,11 @@
     column-gap: 20px;
   }
   .body {
-    align-items: start;
+    align-items: flex-start;
   }
 }
+
+/* Media Query: Screen width greater than or equal to 986px */
 @media screen and (min-width: 986px) {
   .container {
     width: 90%;
@@ -133,7 +160,6 @@
   .topBarSubTitleWrapper {
     margin-left: 12px;
   }
-
   .body {
     padding: 24px;
   }
@@ -141,19 +167,19 @@
     border-right: 1px solid var(--colorBorder);
     display: none !important;
   }
-
   .titleBar h2 {
     font-size: var(--fontSize5);
     font-weight: var(--fontWeight1);
     margin-bottom: 0px;
   }
-
   .AssessmentOverviewNone {
     display: contents;
   }
 }
 
+/* Media Query: Screen width greater than or equal to 1200px */
 @media screen and (min-width: 1200px) {
+  /* Set the grid layout for assessment cards to 3 columns */
   .AssessmentCardWrapper {
     grid-template-columns: 1fr 1fr 1fr;
   }
